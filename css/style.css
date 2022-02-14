@@ -15,8 +15,9 @@ html {
 .nav-bar {
     display: flex;
     width: 100%;
-    background-image: url('/img/mainbg.jpg');
+    background: rgba( 0, 0, 0, 0.10)url('/img/sss.jpg');
     background-size: cover;
+    background-blend-mode: darken;
     position: sticky;
 }
     .sec-left {
@@ -46,22 +47,26 @@ html {
     list-style: none;
     
 }
+.fa-search {
+    color: white;
+}
 .nav-bar ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: var(--ubuntu);
 }
 .nav-bar img {
-    border: 4px solid rgb(59, 59, 59);
+    border: 4px solid rgb(255, 255, 255);
     border-radius: 50%;
     width: 6rem;
     margin: .8rem .8rem;
 }
 #inp-nav {                                          
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 9px;
     height: 2rem;
     width: 40%; 
+    color: white;
     background-color: transparent;
     padding: 0.3rem 0.3rem;
     font-family: var(--ubuntu);
@@ -74,14 +79,57 @@ html {
     margin-left: 1rem;
 }
 .nav-bar ul li a:hover {
-   
-     color: rgb(218, 218, 218); 
+   color: rgb(255, 187, 187); 
+}
+.home {
+    background: rgba(0, 0, 0, 0.014) url('/img/sss.jpg');
+    background-size: cover;
+    height: 60rem;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.ctn-bx-hm {
+    /* background-color: aqua; */
+    width: 80rem;
+    height: 40rem;
+}
+.hone {
+    color: white;
+    font-family: var(--ubuntu);
+    font-size: 5rem;
+}
+.dynamic-text {
+    color: rgb(245, 117, 117);
+    position: relative;
+    margin-left: 2rem;
+    height: 4.7rem;
+    
+}
+.dynamic-text::before {
+    content: "";
+   position: absolute;
+   top: 0;
+    left: 100%;
+   width: 1px;
+   height: 100%;
+   border-right: 2px solid rgb(245, 117, 117);
+   animation: tick 1s linear infinite;
 
-
-
-
+}
+@keyframes tick {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 @media (max-width:915px){
    
 }
