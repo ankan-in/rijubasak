@@ -15,7 +15,7 @@ html {
 .nav-bar {
     display: flex;
     width: 100%;
-    background: rgba( 0, 0, 0, 0.10)url('/img/sss.jpg');
+    background: rgba(0, 0, 0, 0.10)url('img/sss.jpg');
     background-size: cover;
     background-blend-mode: darken;
     position: sticky;
@@ -82,7 +82,7 @@ html {
    color: rgb(255, 187, 187); 
 }
 .home {
-    background: rgba(0, 0, 0, 0.014) url('/img/sss.jpg');
+    background: rgba(0, 0, 0, 0.014) url('img/sss.jpg');
     background-size: cover;
     height: 60rem;
     background-blend-mode: darken;
