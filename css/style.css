@@ -6,6 +6,7 @@
 }
 html {
    font-size: 62.5%;   
+   scroll-behavior: smooth;
 }
 *{
     margin: 0;
@@ -15,10 +16,10 @@ html {
 .nav-bar {
     display: flex;
     width: 100%;
-    background: rgba(0, 0, 0, 0.10)url('img/sss.jpg');
+    background: rgba(0, 0, 0, 0.10)url('../img/sss.jpg');
     background-size: cover;
     background-blend-mode: darken;
-    position: sticky;
+    position: fixed;
 }
     .sec-left {
     width: 60%;
@@ -82,9 +83,10 @@ html {
    color: rgb(255, 187, 187); 
 }
 .home {
-    background: rgba(0, 0, 0, 0.014) url('img/sss.jpg');
+    background: rgba(0, 0, 0, 0.014);
+    background-image: url('../img/sss.jpg');
     background-size: cover;
-    height: 60rem;
+    height: 100rem;
     background-blend-mode: darken;
     display: flex;
     justify-content: center;
@@ -104,20 +106,28 @@ html {
 .dynamic-text {
     color: rgb(245, 117, 117);
     position: relative;
-    margin-left: 2rem;
     height: 4.7rem;
     
 }
 .dynamic-text::before {
     content: "";
-   position: absolute;
+   position: absolute ;
    top: 0;
-    left: 100%;
+   left: 100%;
    width: 1px;
    height: 100%;
    border-right: 2px solid rgb(245, 117, 117);
    animation: tick 1s linear infinite;
 
+}
+.intd {
+    color: white;
+    font-size: 3rem;
+    font-family: var(--ubuntu);
+}   
+#abtm {
+
+    height: 700rem;
 }
 @keyframes tick {
     0%{

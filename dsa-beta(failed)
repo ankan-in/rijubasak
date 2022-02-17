@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const body = document.body;
+        body.style.background = 'aliceblue';
+
+ text = new Array(10);
+ text[1] ="PUSPA" 
+ text[2] ="PUSPA1"
+ text[3] ="PUSPA2"
+ text[4] ="PUSPA3"
+ text[5] ="PUSPA4"
+ text[6] ="PUSPA5"
+ text[7] ="PUSPA6"
+ text[8] ="PUSPA7"
+ text[9] ="PUSPA8"
+ text[10] ="PUSPA9"
+for (let i = 1; i < 11; i++) {
+    const x = Math.round(Math.random(i) * 11);
+  console.log(text[x]);
+}
+    </script>
+</body>
+</html>
