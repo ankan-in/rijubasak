@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,80 @@
     <title>Rohit's website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
     <nav class="nav-bar">
         <section class="sec-left">
-    <a href="index.html"><img src="img/images.png" alt="IMAGE NOT LOADED"></a> 
-           
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#abtm">ABOUT ME</a></li>
-            <li><a href="">CONTACT US</a></li>
-        </ul>
-    
+            <a href="index.html"><img src="img/images.png" alt="IMAGE NOT LOADED"></a>
+
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#abtm" onclick="fill()">ABOUT ME</a></li>
+                <li><a href="#ctus">CONTACT US</a></li>
+            </ul>
+
+        </section>
+        <section class="sec-right">
+
+            <input type="text" id="inp-nav"> <button class="btn-sm"><i class="fa fa-search"></i></button>
+
+        </section>
+    </nav>
+    <section class="home" id="home">
+        <div class="ctn-bx-hm">
+            <h1 class="hone">Hi I am a <span class="dynamic-text"></span></h1>
+            <h3 class="intd">Hi, I am Rohit Basak. <br> Reading in ____ College <br>I love technology and AI and also
+                love to play with them too.<br> To read more about me and my plans just <a href="#abtm"
+                    style="color: white;" onclick="fill()">Click Here.</a></h3>
+        </div>
     </section>
-    <section class="sec-right">
-       
-        <input type="text" id="inp-nav"> <button class="btn-sm"><i class="fa fa-search"></i></button>
-    
-    </section>
-</nav>
-<section class="home" id="home">
-    <div class="ctn-bx-hm">
-        <h1 class="hone">Hi I am a <span class="dynamic-text"></span></h1>
-        <h3 class="intd">Hi, I am Rohit Basak. <br> Reading in ____ College <br>I love technology and AI and also love to play with them too.<br> To read more about me and my plans just <a href="#abtm" style="color: white;">Click Here.</a></h3>
-    </div>
-</section>
-<section id="abtm" class="abtm">
+    <section id="abtm" class="abtm">
+<h1 class="About-me"">About Me</h1>
+<ul class="ullu">
+<li><div class="lang html">
+    HTML5
+    <span class="bar">
+        <span class="fillh"></span>
+    </span>
+</div>
+</li>
+
+<li><div class="lang html">
+    C
+    <span class="bar">
+        <span class="fillc"></span>
+    </span>
+</div>
+</li>
+<li><div class="lang html">
+    PYTHON
+    <span class="bar">
+        <span class="fillp"></span>
+    </span>
+</div>
+</li>
+<li><div class="lang html">
+    CSS 3
+    <span class="bar">
+        <span class="fillCS"></span>
+    </span>
+</div>
+</li>
 
 
-</section>
-<script src="js/app.js"></script>
+</ul>
+    </section>
+    <section class="contact" id="ctus">
+        
+        
+
+
+
+
+    </section>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

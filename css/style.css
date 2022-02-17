@@ -126,8 +126,7 @@ html {
     font-family: var(--ubuntu);
 }   
 #abtm {
-
-    height: 700rem;
+    height: 110rem;
 }
 @keyframes tick {
     0%{
@@ -140,6 +139,11 @@ html {
         opacity: 0;
     }
 }
-@media (max-width:915px){
-   
+.About-me {
+    font-family: var(--ubuntu);
+    font-size: 10rem;
+    margin: 5rem 10rem;
+    text-decoration: underline;
+    user-select: none;
 }
+

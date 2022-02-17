@@ -38,3 +38,36 @@ let letter = '';
     
     setTimeout(type, 200);
 }());
+
+
+
+function fill() {
+
+  var fillh = document.querySelector('.fillh');
+  fillh.classList.add('animh');
+
+ setInterval(() => {
+    fillh.classList.remove('animh')
+  }, 4100);
+
+  var fillc = document.querySelector('.fillc');
+  fillc.classList.add('animc');
+
+ setInterval(() => {
+    fillc.classList.remove('animc')
+  }, 4100);
+
+  var fillp = document.querySelector('.fillp');
+  fillp.classList.add('animp');
+
+ setInterval(() => {
+    fillp.classList.remove('animp')
+  }, 4100);
+
+  var fillcs = document.querySelector('.fillCS');
+  fillcs.classList.add('animCss');
+
+ setInterval(() => {
+    fillcs.classList.remove('animCss')
+  }, 4100);
+}
