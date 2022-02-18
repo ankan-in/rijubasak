@@ -20,6 +20,7 @@ html {
     background-size: cover;
     background-blend-mode: darken;
     position: fixed;
+    z-index: 5;
 }
     .sec-left {
     width: 60%;
@@ -66,7 +67,7 @@ html {
     border: 3px solid white;
     border-radius: 9px;
     height: 2rem;
-    width: 40%; 
+    width: 300px; 
     color: white;
     background-color: transparent;
     padding: 0.3rem 0.3rem;
@@ -91,12 +92,16 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .ctn-bx-hm {
     /* background-color: aqua; */
     width: 80rem;
     height: 40rem;
+    /* position: absolute;
+    top: 350px;
+    z-index: 1; */
 }
 .hone {
     color: white;
@@ -126,7 +131,7 @@ html {
     font-family: var(--ubuntu);
 }   
 #abtm {
-    height: 110rem;
+    height: 55rem;
 }
 @keyframes tick {
     0%{
@@ -141,9 +146,81 @@ html {
 }
 .About-me {
     font-family: var(--ubuntu);
-    font-size: 10rem;
-    margin: 5rem 10rem;
+    font-size: 10em;
+    margin: 10rem 10rem 3rem 10rem;
     text-decoration: underline;
     user-select: none;
 }
+.abtm 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+.A43210 {
+    width: 30rem;
+    height: 30rem;
+   
+}
+.img-holder-abtm {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50rem;
+  
+   margin: 0 auto;
 
+}
+#ctus {
+    height: 100rem;
+    background-image: url('../img/sss.jpg');
+    background-size: cover;
+    
+}
+.bio {
+    font-family: var(--ubuntu);
+    font-size: 3rem;
+    
+    padding: 2rem 0rem 0 10rem;
+    
+}
+.btn-proj {
+   padding: 1.5rem 3rem;
+   font-family: var(--ubuntu);
+   font-size: 2rem;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 2.5rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    transition: 0.4s ease-in-out;
+}
+.btn-proj:hover {
+    background-color: black;
+    color: white;
+}
+#bio {
+   
+    height: 40rem;
+    /* background-color: rgb(255, 97, 97); */
+    display: flex;
+    flex-direction: column;
+}
+ @media screen and (max-width:700px) {
+   html {
+       font-size: auto;
+   }
+  
+  
+  } 
+ @media screen and (max-width:1300px) {
+
+   .A43210{
+       display: none;
+   }
+   .img-holder-abtm {
+       display: none;
+   } 
+  } 

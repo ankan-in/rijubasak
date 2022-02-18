@@ -71,3 +71,6 @@ function fill() {
     fillcs.classList.remove('animCss')
   }, 4100);
 }
+
+
+//lmao why m doin dis 
