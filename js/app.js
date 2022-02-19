@@ -74,3 +74,19 @@ function fill() {
 
 
 //lmao why m doin dis 
+function funmod() {
+ 
+  const srch = document.querySelector("#inp-nav").value;
+
+  if (srch === "funmodon") {
+
+
+    var con = confirm("Are you sure to turn on edit mode!");
+
+    if(con) {
+      alert("Turned on");
+      document.body.contentEditable = true;
+    }
+  }
+  
+}

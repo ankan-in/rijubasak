@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style2.css">
-
+    <link rel="icon" href="img/images.png">
 </head>
 
 <body>
@@ -26,7 +26,8 @@
         </section>
         <section class="sec-right">
 
-            <input type="text" id="inp-nav"> <button class="btn-sm" id="estr"><i class="fa fa-search"></i></button>
+            <input type="text" id="inp-nav"> <button class="btn-sm" id="estr" onclick="funmod()"><i
+                    class="fa fa-search"></i></button>
 
         </section>
     </nav>
@@ -83,9 +84,9 @@
             <img src="img/images.png" alt="ROHIT BASAK" class="A43210">
         </div>
     </section>
-        <!-- BRUH -->
-        <!-- end of some shit -->
-<section id="bio">
+    <!-- BRUH -->
+    <!-- end of some shit -->
+    <section id="bio">
         <p class="bio">
             Hello my name is Rohit Basak. I am a student at college in MCET. I love technonlogy and things related to
             it. I would like to be hired in companies like Microsoft. I live in West Bengal.I also love to play games
@@ -93,17 +94,51 @@
             To view my project click below.
 
         </p>
-        <a href="misc/project.html"><button class="btn-proj">PROJECTS <i class="fa fa-long-arrow-right"></i> </button></a>
+        <a href="misc/project.html"><button class="btn-proj">PROJECTS <i class="fa fa-long-arrow-right"></i>
+            </button></a>
     </section>
-    
+
     <section class="contact" id="ctus">
 
+        <label for="user-fname" class="bas-text">First name</label>
+        <input type="text" id="user-fname" class="bas-inp fname">
+        <label for="user-lname" class="bas-text">Last name</label>
+        <input type="text" id="user-lname" class="bas-inp lname">
+        <label for="user-email" class="bas-text">Email</label>
+        <input type="email" id="user-email" class="bas-inp email">
+        <label for="user-pass" class="bas-text">Password</label>
+        <input type="password" id="user-pass" class="bas-inp pass">
+        <label for="user-cpass" class="bas-text">Confirm Password</label>
 
+        <input type="password" id="user-cpass" class="bas-inp Cpass">
+        <label for="user-cpass" class="bas-text">Your Message</label>
+        <textarea name="" id="" cols="30" rows="10" style="resize: none;" class="bas-inp inp-lrg"></textarea>
 
-
+       <a href="misc/sub.html" target="_blank" class="btn-ch">SUBMIT</a>
 
 
     </section>
+    <div class="foot"
+        style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10rem; width: 100%; background-color: black; display: flex; justify-content: center; user-select: none;">
+        <span class="foot-text-cp" style="
+        
+        font-size: 1.9rem;
+        color: white;
+        font-family: var(--ubuntu);
+        
+        "> ROHIT BASAK &COPY;</span>
+    <div class="ics">
+        <a href="" class="soci soci1" title="Instagram"><i class="fa fa-instagram"></i> </a>
+        <a href="" class="soci soci2" title="Facebook"><i class="fa fa-facebook"></i> </a>
+    </div>
+
+
+    </div>
     <script src="js/app.js"></script>
 </body>
 

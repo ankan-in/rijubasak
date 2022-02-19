@@ -6,12 +6,18 @@
 }
 html {
    font-size: 62.5%;   
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+ height: 100%;
+ width: 100%; 
 }
 *{
     margin: 0;
     padding: 0;
     outline: none;
+    box-sizing: border-box;
 }
 .nav-bar {
     display: flex;
@@ -66,7 +72,7 @@ html {
 #inp-nav {                                          
     border: 3px solid white;
     border-radius: 9px;
-    height: 2rem;
+    height: 3rem;
     width: 300px; 
     color: white;
     background-color: transparent;
@@ -132,6 +138,8 @@ html {
 }   
 #abtm {
     height: 55rem;
+    width: 100%;
+    
 }
 @keyframes tick {
     0%{
@@ -174,16 +182,26 @@ html {
 
 }
 #ctus {
-    height: 100rem;
+    height: 60rem;
     background-image: url('../img/sss.jpg');
-    background-size: cover;
-    
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bas-text{
+    color: white;
+    font-family: var(--ubuntu);
+    font-size: 2.5rem;
+    margin: 0 auto;
 }
 .bio {
     font-family: var(--ubuntu);
     font-size: 3rem;
     
-    padding: 2rem 0rem 0 10rem;
+    padding: 2rem 0rem 0 5rem;
     
 }
 .btn-proj {
@@ -193,7 +211,7 @@ html {
     background-color: transparent;
     border: 2px solid black;
     border-radius: 2.5rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
     margin-top: 2rem;
     transition: 0.4s ease-in-out;
 }
@@ -201,12 +219,63 @@ html {
     background-color: black;
     color: white;
 }
+.bas-inp {
+    width: 30%;
+    margin: 0 auto;
+    height: 4vh;
+    padding: auto;
+    font-family: var(--ubuntu);
+  
+    font-size: 2rem;
+}
 #bio {
    
     height: 40rem;
     /* background-color: rgb(255, 97, 97); */
     display: flex;
+    width: 100%;
     flex-direction: column;
+}
+.inp-lrg {
+    height: 20vh;
+    padding: .3rem;
+}
+.btn-ch {
+    width: 15%;
+    padding: 1.5rem 3rem;
+   font-family: var(--ubuntu);
+   font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+   border: none;
+    border-radius: 2.5rem;
+    margin: 1rem auto;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.soci {
+    color: white;
+    border: 0.2rem solid white;
+    font-size: 3rem;
+    border-radius: 2rem;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.soci2 {
+    margin-left: 0.8rem  
+}
+.ics {
+    display: flex;
+   
 }
  @media screen and (max-width:700px) {
    html {
