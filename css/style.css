@@ -182,7 +182,7 @@ body {
 
 }
 #ctus {
-    height: 60rem;
+    height: auto;
     background-image: url('../img/sss.jpg');
     background-size: 100%;
     background-position: center;
@@ -220,7 +220,7 @@ body {
     color: white;
 }
 .bas-inp {
-    width: 30%;
+    width: 70%;
     margin: 0 auto;
     height: 4vh;
     padding: auto;
@@ -276,6 +276,19 @@ body {
 .ics {
     display: flex;
    
+}
+.ctform, .formdesign {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formerror {
+    margin: 0 auto;
+    color: red;
+    font-family: var(--ubuntu);
+    font-size: 1.2rem;
 }
  @media screen and (max-width:700px) {
    html {

@@ -90,3 +90,21 @@ function funmod() {
   }
   
 }
+/*function sub() {
+var ufname = document.querySelector('#user-fname').value;
+var ulname = document.querySelector('#user-lname').value;
+var uemail = document.querySelector('#user-email').value;
+var upass = document.querySelector('#user-pass').value;
+var ucpass = document.querySelector('#user-cpass').value;
+var umsg = document.querySelector('#user-msg').value; 
+
+if(upass === ucpass) {
+  window.open('../misc/sub.html')
+  
+} else {
+  alert('error');
+}
+  
+
+}*/
+
