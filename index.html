@@ -13,7 +13,13 @@
 </head>
 
 <body>
+ 
     <nav class="nav-bar">
+        <div class="ham" onclick="nav()">
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+        </div>
         <section class="sec-left">
             <a href="index.html"><img src="img/images.png" alt="IMAGE NOT LOADED"></a>
 
@@ -33,15 +39,20 @@
     </nav>
     <section class="home" id="home">
         <div class="ctn-bx-hm">
-            <h1 class="hone">Hi I am a <span class="dynamic-text"></span></h1>
-            <h3 class="intd">Hi, I am Rohit Basak. <br> Reading in MCET College <br>I love technology and AI and also
-                love to play with them too.<br> To read more about me and my plans just <a href="#abtm"
-                    style="color: white;" onclick="fill()">Click Here.</a></h3>
+            <div class="holder">
+                <h1 class="hone">Hi I am a <span class="dynamic-text"></span></h1>
+                <h3 class="intd">I am Rohit Basak. <br> Reading in MCET College <br>I love technology and AI and
+                    also
+                    love to play with them too.<br> To read more about me and my plans just <a href="#abtm"
+                        style="color: white;" onclick="fill()">Click Here.</a></h3>
+            </div>
         </div>
     </section>
     <section id="abtm" class="abtm">
-        <div class="4321">
-            <h1 class="About-me"">About Me</h1>
+        <div class="A4321">
+            
+            <h1 class="About-me">About Me</h1>
+     
 <ul class=" ullu">
                 <li>
                     <div class="lang html">
@@ -80,9 +91,7 @@
 
                 </ul>
         </div>
-        <div class="img-holder-abtm">
-            <img src="img/images.png" alt="ROHIT BASAK" class="A43210">
-        </div>
+        
     </section>
     <!-- BRUH -->
     <!-- end of some shit -->
@@ -94,58 +103,64 @@
             To view my project click below.
 
         </p>
-        <a href="misc/project.html"><button class="btn-proj">PROJECTS <i class="fa fa-long-arrow-right"></i>
+        <a href="pages/project.html"><button class="btn-proj">PROJECTS <i class="fa fa-long-arrow-right"></i>
             </button></a>
     </section>
 
     <section class="contact" id="ctus">
-      <form  class="ctform" onsubmit="return validateform()" method="post" name="myForm">
-        <div class="formdesign" id="name">
-        <label for="user-fname" class="bas-text">First name</label> 
-        <input type="text" id="user-fname" class="bas-inp fname" name="user-fname"> <span class="formerror"  id="fer1"></span>
-    </div>
+        <form class="ctform" onsubmit="return validateform()" name="myForm" action="/pages/sub.html">
+            <div class="formdesign" id="name">
+                <label for="user-fname" class="bas-text">First name</label>
+                <input type="text" id="user-fname" class="bas-inp fname" name="user-fname"> <span class="formerror"
+                    id="fer1"></span>
+            </div>
 
 
 
 
-    <div class="formdesign" id="lastname">
-        <label for="user-lname" class="bas-text" >Last name</label>
-        
-        <input type="text" id="user-lname" class="bas-inp lname" name="user-lname"><span class="formerror" id="fer2"></span>
-    </div>
+            <div class="formdesign" id="lastname">
+                <label for="user-lname" class="bas-text">Last name</label>
+
+                <input type="text" id="user-lname" class="bas-inp lname" name="user-lname"><span class="formerror"
+                    id="fer2"></span>
+            </div>
 
 
-    <div class="formdesign" id="email">
-    
-        <label for="user-email" class="bas-text" >Email</label>
-        
-        <input type="email" id="user-email" class="bas-inp email" name="user-email"><span class="formerror" id="fer3"></span>
-        
+            <div class="formdesign" id="email">
 
-        </div>
+                <label for="user-email" class="bas-text">Email</label>
 
-        <div class="formdesign" id="password">
+                <input type="email" id="user-email" class="bas-inp email" name="user-email"><span class="formerror"
+                    id="fer3"></span>
 
-        <label for="user-pass" class="bas-text">Password</label>
-        
-        <input type="password" id="user-pass" class="bas-inp pass" name="user-pass"><span class="formerror" id="fer4"></span>
-        </div>
-        <div class="formdesign" id="cpassword">
-        <label for="user-cpass" class="bas-text"">Confirm Password</label>
 
-        <input type="password" id="user-cpass" class="bas-inp Cpass" name="user-cpass"><span class="formerror" id="fer5"></span>
-        </div>
+            </div>
 
-        <div class="formdesign" id="message">
+            <div class="formdesign" id="password">
 
-            
-        <label for="user-cpass" class="bas-text">Your Message</label>
-        
-        <textarea name="" id="user-msg" cols="30" rows="10" style="resize: none;" class="bas-inp inp-lrg" name="user-msg"></textarea><span class="formerror" id="fer6"></span>
-</div>
-       <input class="btn-ch" type="submit" value="SUBMIT">
-    
-    </form>
+                <label for="user-pass" class="bas-text">Password</label>
+
+                <input type="password" id="user-pass" class="bas-inp pass" name="user-pass"><span class="formerror"
+                    id="fer4"></span>
+            </div>
+            <div class="formdesign" id="cpassword">
+                <label for="user-cpass" class="bas-text"">Confirm Password</label>
+
+        <input type="password" id="user-cpass" class="bas-inp Cpass" name="user-cpass"><span class="formerror"
+                        id="fer5"></span>
+            </div>
+
+            <div class="formdesign" id="message">
+
+
+                <label for="user-cpass" class="bas-text">Your Message</label>
+
+                <textarea name="" id="user-msg" cols="30" rows="10" style="resize: none;" class="bas-inp inp-lrg"
+                    name="user-msg"></textarea><span class="formerror" id="fer6"></span>
+            </div>
+            <input class="btn-ch" type="submit" value="SUBMIT">
+
+        </form>
 
     </section>
     <div class="foot"
@@ -162,15 +177,19 @@
         font-family: var(--ubuntu);
         
         "> ROHIT BASAK &COPY;</span>
-    <div class="ics">
-        <a href="" class="soci soci1" title="Instagram"><i class="fa fa-instagram"></i> </a>
-        <a href="" class="soci soci2" title="Facebook"><i class="fa fa-facebook"></i> </a>
-    </div>
+        <div class="ics" style="margin-top: 1rem;">
+            <a href="https://instagram.com/_riju.basak_" target="_riju" class="soci soci1" title="Instagram"><i
+                    class="fa fa-instagram"></i> </a>
+            <a href="https://www.facebook.com/rohit.basak.39566" target="_riju" class="soci soci2" title="Facebook"><i
+                    class="fa fa-facebook"></i> </a>
+        </div>
 
 
     </div>
     <script src="js/app.js"></script>
     <script src="js/app2.js"></script>
+
+
 </body>
 
 </html>
