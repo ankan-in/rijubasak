@@ -1,3 +1,4 @@
+document.querySelector(".ctform").addEventListener("submit", validateForm)
 function eee(id, error) {
 var element = document.getElementById(id);
 element.getElementsByClassName('formerror')[0].innerHTML = error; 
@@ -69,3 +70,18 @@ element.getElementsByClassName('formerror')[0].innerHTML = error;
 
    
    }
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBhlfYNj_-rV5ofAQ_H1ze3Gxec27Y6ZZE",
+    authDomain: "rijubasak-578ae.firebaseapp.com",
+    databaseURL: "https://rijubasak-578ae-default-rtdb.firebaseio.com",
+    projectId: "rijubasak-578ae",
+    storageBucket: "rijubasak-578ae.appspot.com",
+    messagingSenderId: "328351712979",
+    appId: "1:328351712979:web:29a06cfa4b547f272c3626",
+    measurementId: "G-H04C8QWLQB"
+  };
+firebase.initializeApp(firebaseConfig);
+const contactFormDB = firebase.database().ref('contactForm');
+
+
